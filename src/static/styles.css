@@ -90,12 +90,40 @@ section h3 {
 }
 
 .participants-list li {
+  list-style: none;
   background-color: #e3f2fd;
   color: #1a237e;
   padding: 4px 10px;
   border-radius: 15px;
   font-size: 14px;
   border: 1px solid #bbdefb;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.participant-email {
+  flex: 1;
+}
+
+.delete-btn {
+  background-color: transparent;
+  color: #c62828;
+  border: none;
+  padding: 0 4px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #ffcdd2;
 }
 
 .no-participants {
